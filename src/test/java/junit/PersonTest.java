@@ -14,7 +14,7 @@ public class PersonTest
     }
 
     @Test
-    public void shouldReturnHelloParag()
+    public void shouldReturnHelloParag ()
     {
         Person person=new Person();
 
