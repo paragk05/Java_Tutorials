@@ -5,9 +5,11 @@ import junit.lesson3.Name;
 public class Person
 {
     private Name personName;
+    private static int personCounter;
 
     public Person()
     {
+        personCounter=personCounter+1;
         /*Empty on purpose- default constructor*/
     }
 
@@ -21,8 +23,14 @@ public class Person
         return "Hello World";
     }
 
-    public String hello(String name) {
+    public String hello(String name)
+    {
 
         return "Hello "+name;
+    }
+
+    public static int numberOfPersons()
+    {
+        return personCounter;
     }
 }
