@@ -3,11 +3,23 @@ package junit;
 import junit.lesson10.LoggingLevel;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 
 public class PersonTest
 {
-    static final String[] MY_STATE_VALUES={"PENDING","PROCESSING","PROCESSED"};
+
+    private static final String[] MY_STATE_VALUES={"PENDING","PROCESSING","PROCESSED"};
+
+
+
+    public String []states()
+    {
+        return Arrays.copyOf(MY_STATE_VALUES,MY_STATE_VALUES.length);
+    }
+
+
 
     @Test
     public void shouldReturnWorld ()
@@ -127,6 +139,20 @@ public class PersonTest
 
         final Person []persons2={persons[0],null,myPerson,myPerson2,persons[2],persons[3]};
 
+
+        LoggingLevel states=LoggingLevel.PROCESSING;
+
+        switch (states)
+        {
+            case PENDING:
+            case PROCESSING:
+                callMethod();
+                break;
+            default:
+                break;
+
+
+        }
 
 
         for (LoggingLevel state:LoggingLevel.values())

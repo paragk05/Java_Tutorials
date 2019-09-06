@@ -2,7 +2,7 @@ package junit.lesson10;
 
 public enum LoggingLevel
 {
-    PENDING(1,""), PROCESSING(2,""), PROCESSED(3,"");
+    PENDING(1,""), PROCESSING(2,""), PROCESSED(3,""), ERROR(4,"");
 
     private int p;
     private String s;
@@ -16,4 +16,7 @@ public enum LoggingLevel
     {
         return p;
     }
+
+
+
 }
