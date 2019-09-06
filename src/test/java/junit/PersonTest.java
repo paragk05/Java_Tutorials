@@ -73,4 +73,32 @@ public class PersonTest
             j--;
         }
     }
+
+    @Test
+    public void shouldReturnNumberOfPersonsInLoop()
+    {
+        int i=0;
+        Person person1;
+
+        /*
+        while (i<4)
+        {
+            i++;
+        }
+        assertEquals(4,Person.numberOfPersons());
+
+         */
+
+        /*
+
+        for (i=0;i<4;i++)
+        {
+            person1=new Person();
+        }
+
+        assertEquals(4,Person.numberOfPersons());
+
+         */
+
+    }
 }
