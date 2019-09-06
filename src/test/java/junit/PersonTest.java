@@ -1,11 +1,14 @@
 package junit;
 
+import junit.lesson10.LoggingLevel;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class PersonTest
 {
+    static final String[] MY_STATE_VALUES={"PENDING","PROCESSING","PROCESSED"};
+
     @Test
     public void shouldReturnWorld ()
     {
@@ -118,6 +121,32 @@ public class PersonTest
         {
             person.helloWorld();
         }
+
+        Person myPerson=new Person();
+        Person myPerson2=null;
+
+        final Person []persons2={persons[0],null,myPerson,myPerson2,persons[2],persons[3]};
+
+
+
+        for (LoggingLevel state:LoggingLevel.values())
+        {
+            if (state == LoggingLevel.PENDING)
+            {
+
+            }
+
+            if (state == LoggingLevel.PROCESSING)
+            {
+
+            }
+
+            if (state == LoggingLevel.PROCESSED)
+            {
+
+            }
+        }
+
 
     }
 }
