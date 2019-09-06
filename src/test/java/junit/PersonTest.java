@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class PersonTest
 {
     @Test
-    public void shouldReturnWorld()
+    public void shouldReturnWorld ()
     {
         Person p= new Person();
         assertEquals("Hello World",p.helloWorld());
