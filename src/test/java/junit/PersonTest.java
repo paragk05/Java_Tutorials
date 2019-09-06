@@ -101,4 +101,23 @@ public class PersonTest
          */
 
     }
+
+    @Test
+    public void demonstrateArray(Person [] persons)
+    {
+
+
+        /*
+        for (int i=0;i<persons.length ;i++)
+        {
+            persons[i] = new Person();
+        }
+
+        */
+        for (Person person: persons)
+        {
+            person.helloWorld();
+        }
+
+    }
 }
