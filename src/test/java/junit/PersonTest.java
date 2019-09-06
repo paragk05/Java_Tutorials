@@ -12,6 +12,9 @@ public class PersonTest
 
     private static final String[] MY_STATE_VALUES={"PENDING","PROCESSING","PROCESSED"};
 
+    private static final int PROCESSED =42;
+    private static final int PENDING =40;
+    private static final int PROCESSING =41;
 
 
     public String []states()
